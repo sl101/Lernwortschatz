@@ -1,6 +1,6 @@
 :root {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
+	line-height: 1.4;
 	font-weight: 400;
 
 	color-scheme: light dark;
@@ -37,12 +37,10 @@ a:hover {
 body {
 	font-family: Arial, sans-serif;
 	background-color: #f4f4f4;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
+	padding-block: 20px;
+	overflow-x: hidden;
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .container {
@@ -76,17 +74,6 @@ button:hover {
 button:focus,
 button:focus-visible {
 	outline: 4px auto -webkit-focus-ring-color;
-}
-
-.card {
-	padding: 2em;
-}
-
-#app {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 2rem;
-	text-align: center;
 }
 
 @media (prefers-color-scheme: light) {
