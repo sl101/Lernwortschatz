@@ -43,7 +43,7 @@ const prevCard = () => {
 				</p>
 				<h2>
 					{{ currentCard.title }}
-					<span class="subtitle">{{ currentCard.subtitle }}</span>
+					<!--<span class="subtitle">{{ currentCard.subtitle }}</span>-->
 				</h2>
 				<div class="content">
 					<p><strong>Erklärung:</strong> {{ currentCard.erklärung }}</p>
