@@ -4,8 +4,8 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [vue()],
-	base: '/Lernwortschatz/',
-  //base: './',
+	//base: '/Lernwortschatz/',
+  base: './',
   resolve: {
     alias: {
       '~': path.resolve(__dirname, 'src'), 
