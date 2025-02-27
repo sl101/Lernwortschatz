@@ -2,17 +2,23 @@
 import { ref, watch, computed } from 'vue';
 import { lectionsMap } from '../assets/lections';
 import Header from '../components/Header.vue';
+import { useWordStore } from "../store/wortschatzStore";
 
-const lectionKeys = Object.keys(lectionsMap);
-const totalLections = computed(() => lectionKeys.length);
+const wordStore = useWordStore();
 
-const selectedLection = ref(lectionKeys[0] || 'lection_1');
-const cards = ref(lectionsMap[selectedLection.value] || []);
+const currentLang = ref<"de" | "ru" | "en">('de')
+
+const lectionKeys = computed(()=>Object.keys(lectionsMap(currentLang.value)));
+const totalLections = computed(() => lectionKeys.value.length);
+
+const selectedLection = ref(lectionKeys.value[0] || 'lection_1');
+const cards = ref(lectionsMap(currentLang.value)[selectedLection.value] || []);
 const currentIndex = ref(0);
+const isInitial = ref(false);
 const currentCard = ref(cards.value[currentIndex.value]);
 
 watch(selectedLection, (newLection) => {
-	cards.value = lectionsMap[newLection] || [];
+	cards.value = lectionsMap(currentLang.value)[newLection] || [];
 	currentIndex.value = 0;
 	currentCard.value = cards.value[0] || null;
 });
@@ -21,6 +27,7 @@ const nextCard = () => {
 	if (currentIndex.value < cards.value.length - 1) {
 		currentIndex.value++;
 		currentCard.value = cards.value[currentIndex.value];
+		wordStore.setCurrentWordId(currentIndex.value)
 	}
 };
 
@@ -28,8 +35,18 @@ const prevCard = () => {
 	if (currentIndex.value > 0) {
 		currentIndex.value--;
 		currentCard.value = cards.value[currentIndex.value];
+		wordStore.setCurrentWordId(currentIndex.value)
 	}
 };
+
+watch(()=>wordStore.currentWordId, (newValue) => {
+	if(isInitial.value) return
+	if(!newValue) return;
+
+	currentIndex.value = newValue;
+	isInitial.value = true;
+},
+{immediate:true})
 </script>
 
 

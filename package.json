@@ -12,6 +12,7 @@
 	"dependencies": {
 		"autoprefixer": "^10.4.20",
 		"path": "^0.12.7",
+		"pinia": "^3.0.1",
 		"vue": "^3.5.13"
 	},
 	"devDependencies": {
