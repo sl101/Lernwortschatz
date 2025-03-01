@@ -1,442 +1,454 @@
 export default [
 	{
 		"id": 1,
-		"title": "die Eigenschaft, -en",
-		"erklärung": "Eine Eigenschaft ist etwas, das eine Person oder Sache ausmacht. Es kann gut oder schlecht sein.",
-		"beispiele": [
-			"Freundlichkeit ist eine gute Eigenschaft.",
-			"Geduld ist eine wichtige Eigenschaft für Lehrer."
-		],
-		"synonyme": "Merkmal, Charakteristikum",
-		"antonyme": "Fehler, Schwäche"
+		"title": "свойство, черта"
 	},
 	{
 		"id": 2,
-		"title": "die Einstellung, -en",
-		"erklärung": "Die Einstellung ist die Art, wie man über etwas denkt oder fühlt.",
-		"beispiele": [
-			"Seine positive Einstellung hilft ihm im Job.",
-			"Eine gute Einstellung ist wichtig für Erfolg."
-		],
-		"synonyme": "Haltung, Meinung",
-		"antonyme": "Ablehnung, Negativität"
+		"title": "отношение, настроение"
 	},
 	{
 		"id": 3,
-		"title": "der Empfang, -e",
-		"erklärung": "Der Empfang ist der Moment, wenn man jemanden begrüßt oder wenn man ein Signal bekommt.",
-		"beispiele": [
-			"Der Empfang im Hotel war sehr freundlich.",
-			"Der Empfang des Handys ist hier schlecht."
-		],
-		"synonyme": "Begrüßung, Aufnahme",
-		"antonyme": "Abschied, Abweisung"
+		"title": "прием, прием сигнала"
 	},
 	{
 		"id": 4,
-		"title": "die Flexibilität (Sg.)",
-		"erklärung": "Flexibilität bedeutet, dass man sich an neue Situationen anpassen kann.",
-		"beispiele": [
-			"Flexibilität ist im Beruf sehr wichtig.",
-			"Sie zeigt viel Flexibilität bei der Planung."
-		],
-		"synonyme": "Anpassungsfähigkeit, Beweglichkeit",
-		"antonyme": "Starrheit, Unbeweglichkeit"
+		"title": "гибкость"
 	},
 	{
 		"id": 5,
-		"title": "die Filiale, -n",
-		"erklärung": "Eine Filiale ist ein Geschäft oder Büro, das zu einem größeren Unternehmen gehört.",
-		"beispiele": [
-			"Die Bank hat eine neue Filiale eröffnet.",
-			"Er arbeitet in der Filiale in der Innenstadt."
-		],
-		"synonyme": "Zweigstelle, Niederlassung",
-		"antonyme": "Hauptsitz, Zentrale"
+		"title": "филиал"
 	},
 	{
 		"id": 6,
-		"title": "die GmbH – die Gesellschaft mit beschränkter Haftung",
-		"erklärung": "Eine GmbH ist eine Art von Unternehmen, bei dem die Besitzer nur begrenzt haften.",
-		"beispiele": [
-			"Sie haben eine GmbH gegründet.",
-			"Die GmbH ist eine häufige Unternehmensform in Deutschland."
-		],
-		"synonyme": "Unternehmen, Firma",
-		"antonyme": "Einzelunternehmen, Personengesellschaft"
+		"title": "ООО (общество с ограниченной ответственностью)"
 	},
 	{
 		"id": 7,
-		"title": "der Hauptsitz, -e",
-		"erklärung": "Der Hauptsitz ist der wichtigste Ort eines Unternehmens, wo die Chefs arbeiten.",
-		"beispiele": [
-			"Der Hauptsitz von BMW ist in München.",
-			"Die Firma hat ihren Hauptsitz nach Berlin verlegt."
-		],
-		"synonyme": "Zentrale, Firmensitz",
-		"antonyme": "Filiale, Zweigstelle"
+		"title": "главный офис, штаб-квартира"
 	},
 	{
 		"id": 8,
-		"title": "die IT – Informationstechnologie (Sg.)",
-		"erklärung": "IT ist alles, was mit Computern und Technologie zu tun hat.",
-		"beispiele": [
-			"Er arbeitet in der IT-Abteilung.",
-			"Die IT entwickelt neue Software."
-		],
-		"synonyme": "Informatik, Computertechnik",
-		"antonyme": "Handarbeit, Manuelle Arbeit"
+		"title": "ИТ – информационные технологии"
 	},
 	{
 		"id": 9,
-		"title": "die Kenntnis, -se",
-		"erklärung": "Kenntnis bedeutet, dass man etwas weiß oder kann.",
-		"beispiele": [
-			"Sie hat gute Kenntnisse in Mathe.",
-			"Seine Kenntnisse in Deutsch sind sehr gut."
-		],
-		"synonyme": "Wissen, Fähigkeit",
-		"antonyme": "Unwissenheit, Ignoranz"
+		"title": "знание, умение"
 	},
 	{
 		"id": 10,
-		"title": "der Mitarbeiter, -/die Mitarbeiterin, -nen",
-		"erklärung": "Ein Mitarbeiter oder eine Mitarbeiterin ist jemand, der in einem Unternehmen arbeitet.",
-		"beispiele": [
-			"Die Mitarbeiter haben eine Besprechung.",
-			"Sie ist eine neue Mitarbeiterin in der Firma."
-		],
-		"synonyme": "Angestellter, Kollege",
-		"antonyme": "Chef, Vorgesetzter"
+		"title": "сотрудник, сотрудница"
 	},
 	{
 		"id": 11,
-		"title": "der Organisationsdienst (Sg.)",
-		"erklärung": "Der Organisationsdienst ist eine Abteilung, die für die Planung und Koordination von Aufgaben zuständig ist.",
-		"beispiele": [
-			"Der Organisationsdienst hat die Veranstaltung geplant.",
-			"Ohne den Organisationsdienst läuft nichts."
-		],
-		"synonyme": "Koordination, Planung",
-		"antonyme": "Chaos, Unordnung"
+		"title": "служба организации"
 	},
 	{
 		"id": 12,
-		"title": "die Telefonanlage, -n",
-		"erklärung": "Eine Telefonanlage ist ein System, das Telefonate in einem Unternehmen verwaltet.",
-		"beispiele": [
-			"Die Telefonanlage ist ausgefallen.",
-			"Wir haben eine neue Telefonanlage installiert."
-		],
-		"synonyme": "Telefonsystem, Kommunikationssystem",
-		"antonyme": "Einzeltelefon, Handy"
+		"title": "телефонная система"
 	},
 	{
 		"id": 13,
-		"title": "das Training, -s",
-		"erklärung": "Training ist eine Übung oder Schulung, um Fähigkeiten zu verbessern.",
-		"beispiele": [
-			"Das Training war sehr intensiv.",
-			"Wir haben ein Training für neue Mitarbeiter organisiert."
-		],
-		"synonyme": "Übung, Schulung",
-		"antonyme": "Untätigkeit, Faulheit"
+		"title": "тренировка, обучение"
 	},
 	{
 		"id": 14,
-		"title": "die Umgangsformen (PL)",
-		"erklärung": "Umgangsformen sind die Regeln, wie man sich in der Gesellschaft verhält.",
-		"beispiele": [
-			"Gute Umgangsformen sind wichtig im Beruf.",
-			"Er hat ausgezeichnete Umgangsformen."
-		],
-		"synonyme": "Manieren, Benehmen",
-		"antonyme": "Unhöflichkeit, Grobheit"
+		"title": "манеры общения"
 	},
 	{
 		"id": 15,
-		"title": "das Tochterunternehmen, -",
-		"erklärung": "Ein Tochterunternehmen ist eine Firma, die von einer größeren Firma kontrolliert wird.",
-		"beispiele": [
-			"Das Tochterunternehmen hat seinen Sitz in Frankreich.",
-			"Die Muttergesellschaft unterstützt das Tochterunternehmen."
-		],
-		"synonyme": "Tochterfirma, Unternehmenszweig",
-		"antonyme": "Muttergesellschaft, Hauptunternehmen"
+		"title": "дочернее предприятие"
 	},
 	{
 		"id": 16,
-		"title": "die Voraussetzung, -en",
-		"erklärung": "Eine Voraussetzung ist etwas, das notwendig ist, um etwas anderes zu erreichen.",
-		"beispiele": [
-			"Gute Deutschkenntnisse sind eine Voraussetzung für den Job.",
-			"Ohne die richtigen Voraussetzungen kann man nicht teilnehmen."
-		],
-		"synonyme": "Bedingung, Erfordernis",
-		"antonyme": "Hindernis, Barriere"
+		"title": "предпосылка, условие"
 	},
 	{
 		"id": 17,
-		"title": "die Zentrale (Sg.)",
-		"erklärung": "Die Zentrale ist der Hauptsitz eines Unternehmens oder einer Organisation.",
-		"beispiele": [
-			"Die Zentrale der Firma befindet sich in Berlin.",
-			"Alle Entscheidungen werden in der Zentrale getroffen."
-		],
-		"synonyme": "Hauptsitz, Firmensitz",
-		"antonyme": "Filiale, Zweigstelle"
+		"title": "центральный офис, штаб-квартира"
 	},
 	{
 		"id": 18,
-		"title": "bedienen (bediente, bedient)",
-		"erklärung": "Bedienen bedeutet, jemandem zu helfen oder etwas zu bedienen, wie eine Maschine.",
-		"beispiele": [
-			"Der Kellner bedient die Gäste freundlich.",
-			"Kannst du die Maschine bedienen?"
-		],
-		"synonyme": "servieren, helfen",
-		"antonyme": "ignorieren, vernachlässigen"
+		"title": "обслуживать, управлять"
 	},
 	{
 		"id": 19,
-		"title": "sich befinden* (befand, befunden) in (+ Dat.)",
-		"erklärung": "Sich befinden bedeutet, an einem bestimmten Ort zu sein.",
-		"beispiele": [
-			"Das Hotel befindet sich in der Nähe des Bahnhofs.",
-			"Wo befindet sich die nächste Apotheke?"
-		],
-		"synonyme": "liegen, sein",
-		"antonyme": "weggehen, verlassen"
+		"title": "находиться"
 	},
 	{
 		"id": 20,
-		"title": "begrüßen (begrüßte, begrüßt)",
-		"erklärung": "Begrüßen bedeutet, jemanden freundlich willkommen zu heißen.",
-		"beispiele": [
-			"Der Chef begrüßt die neuen Mitarbeiter.",
-			"Wir begrüßen Sie herzlich in unserem Hotel."
-		],
-		"synonyme": "willkommen heißen, empfangen",
-		"antonyme": "verabschieden, ignorieren"
+		"title": "приветствовать"
 	},
 	{
 		"id": 21,
-		"title": "gründen (gründete, gegründet)",
-		"erklärung": "Gründen bedeutet, etwas Neues zu schaffen, wie ein Unternehmen oder eine Organisation.",
-		"beispiele": [
-			"Sie haben eine neue Firma gegründet.",
-			"Der Verein wurde vor 20 Jahren gegründet."
-		],
-		"synonyme": "errichten, starten",
-		"antonyme": "schließen, auflösen"
+		"title": "основывать, создавать"
 	},
 	{
 		"id": 22,
-		"title": "verbessern (verbesserte, verbessert)",
-		"erklärung": "Verbessern bedeutet, etwas besser zu machen.",
-		"beispiele": [
-			"Er möchte seine Deutschkenntnisse verbessern.",
-			"Die Firma hat ihre Produkte verbessert."
-		],
-		"synonyme": "optimieren, verfeinern",
-		"antonyme": "verschlechtern, ruinieren"
+		"title": "улучшать"
 	},
 	{
 		"id": 23,
-		"title": "geduldig",
-		"erklärung": "Geduldig bedeutet, dass man ruhig bleibt und wartet, ohne ungeduldig zu werden.",
-		"beispiele": [
-			"Sie ist eine sehr geduldige Lehrerin.",
-			"Geduldig zu sein ist wichtig im Beruf."
-		],
-		"synonyme": "ruhig, ausdauernd",
-		"antonyme": "ungeduldig, nervös"
+		"title": "терпеливый"
 	},
 	{
 		"id": 24,
-		"title": "gepflegt",
-		"erklärung": "Gepflegt bedeutet, dass etwas sauber und ordentlich ist.",
-		"beispiele": [
-			"Das Hotelzimmer war sehr gepflegt.",
-			"Er trägt immer gepflegte Kleidung."
-		],
-		"synonyme": "sauber, ordentlich",
-		"antonyme": "ungepflegt, schlampig"
+		"title": "ухоженный"
 	},
 	{
 		"id": 25,
-		"title": "hilfsbereit",
-		"erklärung": "Hilfsbereit bedeutet, dass man bereit ist, anderen zu helfen.",
-		"beispiele": [
-			"Sie ist immer hilfsbereit.",
-			"Hilfsbereite Kollegen sind sehr geschätzt."
-		],
-		"synonyme": "unterstützend, freundlich",
-		"antonyme": "egoistisch, gleichgültig"
+		"title": "готовый помочь"
 	},
 	{
 		"id": 26,
-		"title": "international",
-		"erklärung": "International bedeutet, dass etwas mehrere Länder betrifft.",
-		"beispiele": [
-			"Das Unternehmen hat internationale Kunden.",
-			"Die Konferenz ist ein internationales Event."
-		],
-		"synonyme": "global, weltweit",
-		"antonyme": "national, lokal"
+		"title": "международный"
 	},
 	{
 		"id": 27,
-		"title": "tätig",
-		"erklärung": "Tätig bedeutet, dass man aktiv in einem Beruf oder einer Tätigkeit ist.",
-		"beispiele": [
-			"Er ist als Lehrer tätig.",
-			"Die Firma ist im Bereich der IT tätig."
-		],
-		"synonyme": "aktiv, beschäftigt",
-		"antonyme": "untätig, inaktiv"
+		"title": "общаться"
 	},
 	{
 		"id": 28,
-		"title": "weltweit",
-		"erklärung": "Weltweit bedeutet, dass etwas die ganze Welt betrifft.",
-		"beispiele": [
-			"Das Produkt ist weltweit bekannt.",
-			"Die Firma hat weltweit Niederlassungen."
-		],
-		"synonyme": "global, international",
-		"antonyme": "lokal, regional"
+		"title": "критиковать"
 	},
 	{
 		"id": 29,
-		"title": "die AG – die Aktiengesellschaft, -en",
-		"erklärung": "Eine AG ist eine Unternehmensform, bei der das Kapital in Aktien aufgeteilt ist.",
-		"beispiele": [
-			"Die AG hat ihre Aktionäre eingeladen.",
-			"Siemens ist eine bekannte AG in Deutschland."
-		],
-		"synonyme": "Unternehmen, Firma",
-		"antonyme": "GmbH, Einzelunternehmen"
+		"title": "управлять"
 	},
 	{
 		"id": 30,
-		"title": "die Anreise (Sg.)",
-		"erklärung": "Die Anreise ist die Reise zu einem bestimmten Ort, oft für einen Besuch oder ein Treffen.",
-		"beispiele": [
-			"Die Anreise zum Hotel war sehr angenehm.",
-			"Die Anreise dauert etwa zwei Stunden."
-		],
-		"synonyme": "Ankunft, Hinreise",
-		"antonyme": "Abreise, Heimreise"
+		"title": "организовывать"
 	},
 	{
 		"id": 31,
-		"title": "die Besprechung, -en",
-		"erklärung": "Eine Besprechung ist ein Treffen, bei dem über bestimmte Themen gesprochen wird.",
-		"beispiele": [
-			"Wir haben eine Besprechung um 10 Uhr.",
-			"Die Besprechung war sehr produktiv."
-		],
-		"synonyme": "Meeting, Diskussion",
-		"antonyme": "Pause, Freizeit"
+		"title": "расставлять приоритеты"
 	},
 	{
 		"id": 32,
-		"title": "der Flug, -e",
-		"erklärung": "Ein Flug ist die Reise mit einem Flugzeug von einem Ort zum anderen.",
-		"beispiele": [
-			"Der Flug nach Berlin dauert eine Stunde.",
-			"Der Flug war sehr ruhig."
-		],
-		"synonyme": "Flugreise, Luftfahrt",
-		"antonyme": "Zugfahrt, Autofahrt"
+		"title": "реагировать"
 	},
 	{
 		"id": 33,
-		"title": "die Heimreise (Sg.)",
-		"erklärung": "Die Heimreise ist die Rückkehr nach Hause nach einer Reise.",
-		"beispiele": [
-			"Die Heimreise war sehr anstrengend.",
-			"Wir machen uns morgen auf die Heimreise."
-		],
-		"synonyme": "Rückreise, Rückkehr",
-		"antonyme": "Hinreise, Anreise"
+		"title": "отвечать за, нести ответственность"
 	},
 	{
 		"id": 34,
-		"title": "der Neukunde, -n / die Neukundin, -nen",
-		"erklärung": "Ein Neukunde oder eine Neukundin ist jemand, der zum ersten Mal bei einem Unternehmen kauft.",
-		"beispiele": [
-			"Der Neukunde hat viele Fragen gestellt.",
-			"Wir begrüßen unsere Neukundin herzlich."
-		],
-		"synonyme": "Neugast, Erstkäufer",
-		"antonyme": "Stammkunde, Bestandskunde"
+		"title": "ждать"
 	},
 	{
 		"id": 35,
-		"title": "anreisen (reiste an, angereist)",
-		"erklärung": "Anreisen bedeutet, an einem bestimmten Ort anzukommen, oft nach einer Reise.",
-		"beispiele": [
-			"Die Gäste reisen morgen an.",
-			"Wir sind pünktlich angereist."
-		],
-		"synonyme": "ankommen, eintreffen",
-		"antonyme": "abreisen, weggehen"
+		"title": "понимать"
 	},
 	{
 		"id": 36,
-		"title": "Bescheid sagen (sagte Bescheid, Bescheid gesagt)",
-		"erklärung": "Bescheid sagen bedeutet, jemanden über etwas zu informieren.",
-		"beispiele": [
-			"Sag mir Bescheid, wenn du fertig bist.",
-			"Er hat mir Bescheid gesagt, dass er kommt."
-		],
-		"synonyme": "informieren, mitteilen",
-		"antonyme": "verschweigen, verheimlichen"
+		"title": "деятельный, активный"
 	},
 	{
 		"id": 37,
-		"title": "eintreffen* (traf ein, eingetroffen)",
-		"erklärung": "Eintreffen bedeutet, an einem bestimmten Ort anzukommen.",
-		"beispiele": [
-			"Der Zug ist pünktlich eingetroffen.",
-			"Die Pakete sind heute eingetroffen."
-		],
-		"synonyme": "ankommen, erreichen",
-		"antonyme": "abfahren, verlassen"
+		"title": "всемирный"
 	},
 	{
 		"id": 38,
-		"title": "informieren (informierte, informiert)",
-		"erklärung": "Informieren bedeutet, jemandem Informationen zu geben.",
-		"beispiele": [
-			"Bitte informieren Sie mich über den Stand der Dinge.",
-			"Er hat mich über die Änderungen informiert."
-		],
-		"synonyme": "mitteilen, benachrichtigen",
-		"antonyme": "verschweigen, verheimlichen"
+		"title": "акционерное общество"
 	},
 	{
 		"id": 39,
-		"title": "verlaufen* (verlief, verlaufen)",
-		"erklärung": "Verlaufen bedeutet, wie etwas passiert oder sich entwickelt.",
-		"beispiele": [
-			"Das Meeting ist gut verlaufen.",
-			"Die Verhandlungen verlaufen positiv."
-		],
-		"synonyme": "ablaufen, geschehen",
-		"antonyme": "scheitern, fehlschlagen"
+		"title": "прибывать"
 	},
 	{
 		"id": 40,
-		"title": "potenziell",
-		"erklärung": "Potenziell bedeutet, dass etwas möglich ist, aber noch nicht sicher.",
-		"beispiele": [
-			"Er ist ein potenzieller Kandidat für die Stelle.",
-			"Das Projekt hat potenziell große Chancen."
-		],
-		"synonyme": "möglich, eventuell",
-		"antonyme": "sicher, definitiv"
+		"title": "приезд, прибытие"
+	},
+	{
+		"id": 41,
+		"title": "совещание, обсуждение"
+	},
+	{
+		"id": 42,
+		"title": "полет"
+	},
+	{
+		"id": 43,
+		"title": "возвращение домой"
+	},
+	{
+		"id": 44,
+		"title": "новый клиент, новая клиентка"
+	},
+	{
+		"id": 45,
+		"title": "сообщать, давать знать"
+	},
+	{
+		"id": 46,
+		"title": "прибывать, поступать"
+	},
+	{
+		"id": 47,
+		"title": "информировать"
+	},
+	{
+		"id": 48,
+		"title": "протекать, происходить"
+	},
+	{
+		"id": 49,
+		"title": "потенциальный"
+	},
+	{
+		"id": 50,
+		"title": "беспрепятственно, гладко"
+	},
+	{
+		"id": 51,
+		"title": "отдел"
+	},
+	{
+		"id": 52,
+		"title": "рабочая атмосфера"
+	},
+	{
+		"id": 53,
+		"title": "закупка"
+	},
+	{
+		"id": 54,
+		"title": "развитие"
+	},
+	{
+		"id": 55,
+		"title": "финансы"
+	},
+	{
+		"id": 56,
+		"title": "руководство компании"
+	},
+	{
+		"id": 57,
+		"title": "производство"
+	},
+	{
+		"id": 58,
+		"title": "маркетинг"
+	},
+	{
+		"id": 59,
+		"title": "организационная структура"
+	},
+	{
+		"id": 60,
+		"title": "персонал"
+	},
+	{
+		"id": 61,
+		"title": "отдел кадров"
+	},
+	{
+		"id": 62,
+		"title": "производство"
+	},
+	{
+		"id": 63,
+		"title": "сырье"
+	},
+	{
+		"id": 64,
+		"title": "структура"
+	},
+	{
+		"id": 65,
+		"title": "предприятие, компания"
+	},
+	{
+		"id": 66,
+		"title": "сбыт, отдел продаж"
+	},
+	{
+		"id": 67,
+		"title": "рекламная кампания"
+	},
+	{
+		"id": 68,
+		"title": "поставщик"
+	},
+	{
+		"id": 69,
+		"title": "обращать внимание на"
+	},
+	{
+		"id": 70,
+		"title": "строить, создавать"
+	},
+	{
+		"id": 71,
+		"title": "нуждаться, требовать"
+	},
+	{
+		"id": 72,
+		"title": "заниматься чем-либо"
+	},
+	{
+		"id": 73,
+		"title": "нанимать"
+	},
+	{
+		"id": 74,
+		"title": "разрабатывать, развивать"
+	},
+	{
+		"id": 75,
+		"title": "маркировать, обозначать"
+	},
+	{
+		"id": 76,
+		"title": "организовывать"
+	},
+	{
+		"id": 77,
+		"title": "проверять"
+	},
+	{
+		"id": 78,
+		"title": "вести переговоры с"
+	},
+	{
+		"id": 79,
+		"title": "пересылать, перенаправлять"
+	},
+	{
+		"id": 80,
+		"title": "сотрудничать с"
+	},
+	{
+		"id": 81,
+		"title": "безупречный"
+	},
+	{
+		"id": 82,
+		"title": "ответственный за"
+	},
+	{
+		"id": 83,
+		"title": "ответственный за, отвечающий за"
+	},
+	{
+		"id": 84,
+		"title": "коммерческий"
+	},
+	{
+		"id": 85,
+		"title": "среди прочего"
+	},
+	{
+		"id": 86,
+		"title": "рабочая сила"
+	},
+	{
+		"id": 87,
+		"title": "профессиональная академия"
+	},
+	{
+		"id": 88,
+		"title": "экономист, специалист по управлению предприятием"
+	},
+	{
+		"id": 89,
+		"title": "бухгалтерия"
+	},
+	{
+		"id": 90,
+		"title": "финансовый бухгалтер"
+	},
+	{
+		"id": 91,
+		"title": "концерн, крупная компания"
+	},
+	{
+		"id": 92,
+		"title": "месячный отчет"
+	},
+	{
+		"id": 93,
+		"title": "недостаток"
+	},
+	{
+		"id": 94,
+		"title": "фаза, этап"
+	},
+	{
+		"id": 95,
+		"title": "практика"
+	},
+	{
+		"id": 96,
+		"title": "студент"
+	},
+	{
+		"id": 97,
+		"title": "теория"
+	},
+	{
+		"id": 98,
+		"title": "преимущество"
+	},
+	{
+		"id": 99,
+		"title": "чередоваться"
+	},
+	{
+		"id": 100,
+		"title": "создавать"
+	},
+	{
+		"id": 101,
+		"title": "уходить на пенсию"
+	},
+	{
+		"id": 102,
+		"title": "считать, рассчитывать"
+	},
+	{
+		"id": 103,
+		"title": "академический"
+	},
+	{
+		"id": 104,
+		"title": "совместно"
+	},
+	{
+		"id": 105,
+		"title": "рабочая жизнь"
+	},
+	{
+		"id": 106,
+		"title": "профессия, требующая обучения"
+	},
+	{
+		"id": 107,
+		"title": "ученик, стажер"
+	},
+	{
+		"id": 108,
+		"title": "ученик, стажер (сокращение)"
+	},
+	{
+		"id": 109,
+		"title": "начало карьеры"
+	},
+	{
+		"id": 110,
+		"title": "профессиональное училище"
+	},
+	{
+		"id": 111,
+		"title": "окончание школы"
+	},
+	{
+		"id": 112,
+		"title": "оказывать, предоставлять"
+	},
+	{
+		"id": 113,
+		"title": "двойной, дуальный"
 	}
 ]
