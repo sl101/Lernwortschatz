@@ -1,39 +1,22 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-
-const props = defineProps<{ totalLections: number }>();
-
-const tabs = ref<{ value: string, option: string }[]>([]);
-for (let i = 1; i <= props.totalLections; i++) {
-	tabs.value.push({
-		value: `lection_${i}`,
-		option:`Lection ${i}`
-	});
-}
-
-const selectedLection = ref(tabs.value[0].value);
-
-defineEmits(['update:selectedLection']);
+import ToggleLang from "./ToggleLang.vue";
+import ToggleLection from "./ToggleLection.vue";
 </script>
 
 <template>
-	<div class="tabs">
-		<select v-model="selectedLection" @change="$emit('update:selectedLection', selectedLection)">
-			<option v-for="tab in tabs" :key="tab.value" :value="tab.value">
-				{{ tab.option }}
-			</option>
-		</select>
+	<div class="header">
+		<ToggleLection />
+		<ToggleLang />
 	</div>
 </template>
 
 
 <style scoped>
-.tabs{
+.header{
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
 	align-items: center;
-	justify-content: start;
+	justify-content: space-between;
 	gap: 16px;
 }
 </style>

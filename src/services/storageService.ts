@@ -4,8 +4,8 @@ export const api = {
 		return data ? JSON.parse(data) : null;
 	},
 
-	async updateData(data: number) {
-		localStorage.setItem("data", JSON.stringify(data));
-		return data;
+	async updateData(currentLection: string , currentWordId: number, currentLang: string) {
+		localStorage.setItem("data", JSON.stringify({currentLection, currentWordId, currentLang}));
+		return {currentLection, currentWordId, currentLang};
 	},
 };
