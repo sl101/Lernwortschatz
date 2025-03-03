@@ -21,7 +21,8 @@ import RevertButton from "../components/RevertButton.vue";
 
 <style scoped>
 .page_content {
-	padding-block: 20px;
+	padding-top: 20px;
+	padding-bottom: 60px;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;

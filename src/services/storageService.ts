@@ -4,7 +4,7 @@ export const api = {
 		return data ? JSON.parse(data) : { 
 			currentLection: 'lection_1', 
 			currentWordId: 0, 
-			currentLang: 'Eng' 
+			currentLang: 'En' 
 		};
 	},
 

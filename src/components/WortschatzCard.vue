@@ -22,9 +22,8 @@ watch(()=> [wordStore.currentWordId, wordStore.currentLection],
 	}, {immediate:true})
 </script>
 
-
 <template>
-				<div class="card" v-if="currentCard">
+				<div :class="['card', {active:wordStore.isTransated}]" v-if="currentCard">
 				<p>
 					<span>{{ `${currentIndex + 1} / ${lection.length}` }}</span>
 				</p>
@@ -48,5 +47,10 @@ watch(()=> [wordStore.currentWordId, wordStore.currentLection],
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(83, 81, 81, 0.1);
 	text-align: start;
+}
+
+.card.active{
+	justify-content: center;
+	align-items: center;
 }
 </style>
