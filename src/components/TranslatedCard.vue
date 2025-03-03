@@ -20,12 +20,17 @@ watch(()=> wordStore.currentLang , ()=>{
 </script>
 
 <template>
-	<h2>
+	<h2 class="transated-card" >
 		{{ currentCard.title }}
 	</h2>
 </template>
 
 
 <style scoped>
-
+.transated-card{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;align-items: center;
+}
 </style>
