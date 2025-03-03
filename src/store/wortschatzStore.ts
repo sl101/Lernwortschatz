@@ -10,7 +10,8 @@ export const useWordStore = defineStore('words',  {
 		currentLection: 'lection_1',
 		currentLang: 'Eng',
 		is_loading: false,
-		lectionKeys: Object.keys(lectionsMap('de'))
+		lectionKeys: Object.keys(lectionsMap('de')),
+		isTransated: false
   }),
 
 	actions: {
@@ -53,6 +54,10 @@ export const useWordStore = defineStore('words',  {
 			} catch (error) {
 				console.error("Failed to save data:", error);
 			}
+    },
+
+		toggleTranslate(){
+				this.isTransated = !this.isTransated;
     },
 	}
 });
