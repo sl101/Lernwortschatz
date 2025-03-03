@@ -61,6 +61,7 @@ const prevCard = () => {
 }
 
 .content {
+	height: 100%;
 	overflow-y: auto;
 	border-top: 1px solid #aaa;
 	border-bottom: 1px solid #aaa;
