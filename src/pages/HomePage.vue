@@ -3,9 +3,9 @@
 import Header from '../components/Header.vue';
 import WortschatzCard from "../components/WortschatzCard.vue";
 import RevertButton from "../components/RevertButton.vue";
-import { useWordStore } from "../store/wortschatzStore";
+//import { useWordStore } from "../store/wortschatzStore";
 
-const wordStore = useWordStore();
+//const wordStore = useWordStore();
 </script>
 
 <template>
@@ -21,6 +21,8 @@ const wordStore = useWordStore();
 
 <style scoped>
 .page_content {
+	padding-block: 20px;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

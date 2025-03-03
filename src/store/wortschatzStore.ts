@@ -5,10 +5,10 @@ import { lectionsMap } from '../assets/lections';
 export const useWordStore = defineStore('words',  {
 
 	state: () => ({
-		langList: [ 'Eng', 'Ru'],
+		langList: [ 'En', 'Ru'],
 		currentWordId: 0,
 		currentLection: 'lection_1',
-		currentLang: 'Eng',
+		currentLang: 'En',
 		is_loading: false,
 		lectionKeys: Object.keys(lectionsMap('de')),
 		isTransated: false

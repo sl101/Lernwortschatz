@@ -24,48 +24,55 @@ const prevCard = () => {
 
 <template>
 	<div class="card-content" >
-		<h2>
-					{{ currentCard.title }}
-				</h2>
-				<div class="content">
-					<p><strong>Erklärung:</strong> {{ currentCard.erklärung }}</p>
-					<div class="beispiele">
-						<p><strong>Beispiele:</strong></p>
-						<ul>
-							<li v-for="(example, index) in currentCard.beispiele" :key="index">{{ example }}</li>
-						</ul>
-					</div>
-					<div>
-						<p><strong>Synonyme:</strong> {{ currentCard.synonyme }}</p>
-						<p><strong>Antonyme:</strong> {{ currentCard.antonyme }}</p>
-					</div>
+		<div class="content">
+			<h2 class="title">
+				{{ currentCard.title }}
+			</h2>
+	
+				<p><strong>Erklärung:</strong> {{ currentCard.erklärung }}</p>
+				<div class="beispiele">
+					<p><strong>Beispiele:</strong></p>
+					<ul>
+						<li v-for="(example, index) in currentCard.beispiele" :key="index">{{ example }}</li>
+					</ul>
 				</div>
-				<div class="buttons">
-					<button @click="prevCard" :disabled="wordStore.currentWordId === 0">Zurück</button>
-					<button @click="nextCard" :disabled="lectionLength === lectionLength - 1">Weiter</button>
+				<div>
+					<p><strong>Synonyme:</strong> {{ currentCard.synonyme }}</p>
+					<p><strong>Antonyme:</strong> {{ currentCard.antonyme }}</p>
+				</div>
+		
+		</div>
+			<div class="buttons">
+				<button @click="prevCard" :disabled="wordStore.currentWordId === 0">Zurück</button>
+				<button @click="nextCard" :disabled="wordStore.currentWordId === lectionLength - 1">Weiter</button>
 				</div>
 	</div>
 </template>
 
-
-
 <style scoped>
 .card-content {
+	width: 100%;
+	height: 90%;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	align-items: start;
 	gap: 15px;
-}
-
-.card span {
-	color: #777;
 }
 
 .content {
+	overflow-y: auto;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	padding-block: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: start;
 	gap: 15px;
+}
+
+.title{
+	font-size: 1.3em;
 }
 
 .beispiele {
