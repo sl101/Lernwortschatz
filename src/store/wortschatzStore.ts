@@ -14,13 +14,13 @@ export const useWordStore = defineStore('words',  {
   }),
 
 	actions: {
-		async fetchData() {
+		async uploadData() {
 			this.is_loading = true;
 			try {
 				const {currentLection, currentWordId, currentLang} = await api.fetchData();
-				this.currentLection = currentLection ;
-				this.currentWordId = currentWordId ;
-				this.currentLang = currentLang ;
+				this.currentLection = currentLection;
+				this.currentWordId = currentWordId;
+				this.currentLang = currentLang;
 			} catch (error) {
 				console.error("Failed to fetch data:", error);
 			} finally {

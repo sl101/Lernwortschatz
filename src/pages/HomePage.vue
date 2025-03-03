@@ -1,12 +1,7 @@
 <script setup lang="ts">
-
 import Header from '../components/Header.vue';
 import WortschatzCard from "../components/WortschatzCard.vue";
-//import { useWordStore } from "../store/wortschatzStore";
-
-//const wordStore = useWordStore();
 </script>
-
 
 <template>
 	<div class="container">
@@ -17,8 +12,6 @@ import WortschatzCard from "../components/WortschatzCard.vue";
 	</div>
 </template>
 
-
-
 <style scoped>
 .page_content {
 	display: flex;
@@ -26,5 +19,4 @@ import WortschatzCard from "../components/WortschatzCard.vue";
 	justify-content: space-between;
 	gap: 20px;
 }
-
 </style>

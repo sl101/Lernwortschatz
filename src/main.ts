@@ -10,6 +10,6 @@ const pinia = createPinia()
 app.use(pinia)
 
 const wordStore = useWordStore();
-wordStore.fetchData()
+wordStore.uploadData()
 
 app.mount('#app')

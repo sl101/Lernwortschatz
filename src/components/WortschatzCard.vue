@@ -5,12 +5,14 @@ import { lectionsMap } from '../assets/lections';
 
 const wordStore = useWordStore();
 
-const cards = ref(lectionsMap('de')[wordStore.currentLection] || []);
+const cardLang = 'de';
+
+const lection = ref(lectionsMap(cardLang)[wordStore.currentLection] || []);
 const currentIndex = ref(wordStore.currentWordId)
-const currentCard = ref(cards.value[currentIndex.value]);
+const currentCard = ref(lection.value[currentIndex.value]);
 		
 const nextCard = () => {
-	if (currentIndex.value < cards.value.length) {
+	if (currentIndex.value < lection.value.length) {
 		wordStore.setCurrentWordId(++wordStore.currentWordId)
 	}
 };
@@ -26,7 +28,8 @@ watch(()=> [wordStore.currentWordId, wordStore.currentLection],
 (newValue) => {
 	if(!newValue) return
 	currentIndex.value = wordStore.currentWordId;
-	currentCard.value = cards.value[currentIndex.value];
+	lection.value = lectionsMap(cardLang)[wordStore.currentLection];
+	currentCard.value = lection.value[currentIndex.value];
 	}, {immediate:true})
 </script>
 
@@ -34,7 +37,7 @@ watch(()=> [wordStore.currentWordId, wordStore.currentLection],
 <template>
 				<div class="card" v-if="currentCard">
 				<p>
-					<span>{{ `${currentIndex + 1} / ${cards.length}` }}</span>
+					<span>{{ `${currentIndex + 1} / ${lection.length}` }}</span>
 				</p>
 				<h2>
 					{{ currentCard.title }}
@@ -55,7 +58,7 @@ watch(()=> [wordStore.currentWordId, wordStore.currentLection],
 				</div>
 				<div class="buttons">
 					<button @click="prevCard" :disabled="currentIndex === 0">Zurück</button>
-					<button @click="nextCard" :disabled="currentIndex === cards.length - 1">Weiter</button>
+					<button @click="nextCard" :disabled="currentIndex === lection.length - 1">Weiter</button>
 				</div>
 			</div>
 </template>
