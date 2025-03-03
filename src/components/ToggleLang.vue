@@ -7,7 +7,7 @@ const wordStore = useWordStore();
 const langList = ref(wordStore.langList);
 const tabs = ref<{ value: string, option: string }[]>([]);
 
-for (let i = 0; i <= langList.value.length; i++) {
+for (let i = 0; i <= langList.value.length-1; i++) {
 	tabs.value.push({
 		value: langList.value[i],
 		option:langList.value[i]
