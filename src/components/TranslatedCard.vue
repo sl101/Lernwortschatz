@@ -3,6 +3,7 @@
 import { computed, ref, watch } from "vue";
 import { useWordStore } from "../store/wortschatzStore";
 import { lectionsMap } from '../assets/lections';
+import type { Card } from "../types/Card";
 
 
 const wordStore = useWordStore();
@@ -10,8 +11,7 @@ const wordStore = useWordStore();
 const currentLang = computed(()=> wordStore.currentLang.toLocaleLowerCase() as "de" | "ru" | "en");
 
 const lection = computed(()=>lectionsMap(currentLang.value)[wordStore.currentLectionTitle] || []);
-const currentIndex = computed(()=>wordStore.currentIndex)
-const currentCard = computed(()=>lection.value[currentIndex.value]);
+const currentCard = computed(()=>lection.value.find((item: Card) => item.id === wordStore.currentWordId));
 
 watch(()=> wordStore.currentLang , ()=>{
 
