@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue';
+import { ref, watch, computed } from 'vue';
 import { useWordStore } from "../store/wortschatzStore";
 import { lectionsMap } from '../assets/lections';
+import { type Card } from '../types/Card.ts';
 import DeutschContent from "./DeutschContent.vue";
 import TranslatedCard from "./TranslatedCard.vue";
 
@@ -9,25 +10,24 @@ const wordStore = useWordStore();
 
 const cardLang = 'de';
 
-const lection = ref(lectionsMap(cardLang)[wordStore.currentLection] || []);
-const currentIndex = ref(wordStore.currentWordId)
-const currentCard = ref(lection.value[currentIndex.value]);
+const lection = ref<Card[]>(lectionsMap(cardLang)[wordStore.currentLectionTitle] || []);
+const currentId = ref(wordStore.currentWordId)
+const currentCard = computed(() => wordStore.lection.find((item: Card) => item.id === wordStore.currentWordId));
 
-watch(()=> [wordStore.currentWordId, wordStore.currentLection], 
+watch(()=> [wordStore.currentWordId, wordStore.currentLectionTitle], 
 (newValue) => {
 	if(!newValue) return
-	currentIndex.value = wordStore.currentWordId;
-	lection.value = lectionsMap(cardLang)[wordStore.currentLection];
-	currentCard.value = lection.value[currentIndex.value];
+	currentId.value = wordStore.currentWordId;
+	lection.value = lectionsMap(cardLang)[wordStore.currentLectionTitle];
 	}, {immediate:true})
 </script>
 
 <template>
-				<div class="card" v-if="currentCard">
+				<div class="card" v-if="wordStore.currentCard">
 				<p>
-					<span>{{ `${currentIndex + 1} / ${lection.length}` }}</span>
+					<span>{{ `${wordStore.currentIndex} / ${wordStore.lection.length}` }}</span>
 				</p>
-				<DeutschContent v-if="!wordStore.isTransated" :currentCard="currentCard" :currentIndex="currentIndex" :lectionLength="lection.length"/>
+				<DeutschContent v-if="!wordStore.isTransated" :currentCard="currentCard" :lectionLength="lection.length"/>
 				<TranslatedCard v-else/>
 			</div>
 </template>
@@ -37,7 +37,7 @@ watch(()=> [wordStore.currentWordId, wordStore.currentLection],
 .card {
 	display: flex;
 	height: 80%;
-	width: clamp(280px, 90vw, 1200px);
+	width: clamp(280px, 86vw, 1200px);
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: start;

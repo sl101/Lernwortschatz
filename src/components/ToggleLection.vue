@@ -14,13 +14,13 @@ for (let i = 1; i <= wordStore.lectionKeys.length; i++) {
 }
 
 const selectLection = ()=> {
-	wordStore.setCurrentLection(wordStore.currentLection)
+	wordStore.setCurrentLectionTitle(wordStore.currentLectionTitle)
 }
 </script>
 
 <template>
 	<div class="tabs">
-		<select v-model="wordStore.currentLection" @change="selectLection">
+		<select v-model="wordStore.currentLectionTitle" @change="selectLection">
 			<option v-for="tab in tabs" :key="tab.value" :value="tab.value">
 				{{ tab.option }}
 			</option>

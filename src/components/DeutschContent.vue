@@ -3,28 +3,16 @@ import { useWordStore } from "../store/wortschatzStore";
 import { type Card } from "../types/Card.ts";
 const wordStore = useWordStore();
 
-const props = defineProps<{
+defineProps<{
 	currentCard: Card;
 	lectionLength: number;
-	currentIndex: number;
 }>();
 
-const nextCard = () => {
-	if (props.currentIndex < props.lectionLength) {
-		wordStore.setCurrentWordId(++wordStore.currentWordId)
-	}
-};
-
-const prevCard = () => {
-	if (props.currentIndex > 0) {
-		wordStore.setCurrentWordId(--wordStore.currentWordId)
-}
-	}
 </script>
 
 <template>
 	<div class="card-content" >
-		<div class="content">
+		<div class="content" v-if="currentCard">
 			<h2 class="title">
 				{{ currentCard.title }}
 			</h2>
@@ -43,8 +31,8 @@ const prevCard = () => {
 		
 		</div>
 			<div class="buttons">
-				<button @click="prevCard" :disabled="wordStore.currentWordId === 0">Zurück</button>
-				<button @click="nextCard" :disabled="wordStore.currentWordId === lectionLength - 1">Weiter</button>
+				<button @click="wordStore.decreateIndex" :disabled="wordStore.currentIndex === 1">Zurück</button>
+				<button @click="wordStore.increateIndex" :disabled="wordStore.currentIndex === lectionLength">Weiter</button>
 				</div>
 	</div>
 </template>

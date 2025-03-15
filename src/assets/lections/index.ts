@@ -12,3 +12,43 @@ export const lectionsMap = (lang: "de" | "ru" | "en") => {
     })
   );
 };
+
+export const wordTitles = () => {
+  const titles: {id:number, title:string} []= [];
+
+  Object.values(modules['de']).forEach((module) => {
+    const defaultData = (module as { default: any }).default;
+    if (Array.isArray(defaultData)) {
+      defaultData.forEach((item) => {
+        if (item.title) {
+          titles.push({
+						id: item.id, 
+						title: item.title});
+        }
+      });
+    }
+  });
+
+  return titles;
+};
+
+export const getLectionById = (wordId: number) => {
+
+  const lectionsArray = Object.entries(modules['de']);
+
+  for (let i = 0; i < lectionsArray.length; i++) {
+    const [key, module] = lectionsArray[i];
+    const defaultData = (module as { default: any }).default;
+
+    if (Array.isArray(defaultData)) {
+
+      const itemIndex = defaultData.findIndex((item) => item.id === wordId);
+      if (itemIndex !== -1) {
+
+        return { lectionIndex: i, itemIndex };
+      }
+    }
+  }
+
+  return undefined;
+};
