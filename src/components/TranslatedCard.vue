@@ -9,8 +9,8 @@ const wordStore = useWordStore();
 
 const currentLang = computed(()=> wordStore.currentLang.toLocaleLowerCase() as "de" | "ru" | "en");
 
-const lection = computed(()=>lectionsMap(currentLang.value)[wordStore.currentLection] || []);
-const currentIndex = computed(()=>wordStore.currentWordId)
+const lection = computed(()=>lectionsMap(currentLang.value)[wordStore.currentLectionTitle] || []);
+const currentIndex = computed(()=>wordStore.currentIndex)
 const currentCard = computed(()=>lection.value[currentIndex.value]);
 
 watch(()=> wordStore.currentLang , ()=>{
