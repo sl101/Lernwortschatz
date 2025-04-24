@@ -1,6 +1,6 @@
 
 <script setup lang="ts">
-import { computed, ref, watch } from "vue";
+import { computed, watch } from "vue";
 import { useWordStore } from "../store/wortschatzStore";
 import { lectionsMap } from '../assets/lections';
 import type { Card } from "../types/Card";

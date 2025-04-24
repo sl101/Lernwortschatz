@@ -54,6 +54,7 @@ defineProps<{
 	border-top: 1px solid #aaa;
 	border-bottom: 1px solid #aaa;
 	padding-block: 10px;
+	padding-right: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: start;

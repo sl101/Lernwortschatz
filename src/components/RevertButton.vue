@@ -10,12 +10,20 @@ const handleToggleCard = () => {
 </script>
 
 <template>
-	<div :class="['button', { active: wordStore.isTransated }]" @click="handleToggleCard">
+	<div class="wrapper">
+		<div :class="['button', { active: wordStore.isTransated }]" @click="handleToggleCard">
+		</div>
 	</div>
 </template>
 
 
 <style scoped>
+.wrapper{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
 .button{
 	flex: 0 0 60px;
 	width: 60px;

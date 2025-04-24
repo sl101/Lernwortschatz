@@ -23,20 +23,25 @@ watch(()=> [wordStore.currentWordId, wordStore.currentLectionTitle],
 </script>
 
 <template>
-				<div class="card" v-if="wordStore.currentCard">
-				<p>
-					<span>{{ `${wordStore.currentIndex} / ${wordStore.lection.length}` }}</span>
-				</p>
-				<DeutschContent v-if="!wordStore.isTransated" :currentCard="currentCard" :lectionLength="lection.length"/>
-				<TranslatedCard v-else/>
-			</div>
+	<div class="wrapper">
+		<div class="card" v-if="wordStore.currentCard">
+			<p>
+				<span>{{ `${wordStore.currentIndex} / ${wordStore.lection.length}` }}</span>
+			</p>
+			<DeutschContent v-if="!wordStore.isTransated" :currentCard="currentCard" :lectionLength="lection.length"/>
+			<TranslatedCard v-else/>
+		</div>
+	</div>
 </template>
 
 
 <style scoped>
+.wrapper{
+	display: flex;
+	height: 70vh;
+}
 .card {
 	display: flex;
-	height: 80%;
 	width: clamp(280px, 86vw, 1200px);
 	flex-direction: column;
 	justify-content: space-between;
