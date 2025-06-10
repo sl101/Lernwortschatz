@@ -38,7 +38,7 @@ watch(()=> [wordStore.currentWordId, wordStore.currentLectionTitle],
 <style scoped>
 .wrapper{
 	display: flex;
-	height: 70vh;
+	height: 70svh;
 }
 .card {
 	display: flex;

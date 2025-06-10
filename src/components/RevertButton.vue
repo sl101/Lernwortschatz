@@ -19,6 +19,7 @@ const handleToggleCard = () => {
 
 <style scoped>
 .wrapper{
+	margin-top: 10px;
 	display: flex;
 	width: 100%;
 	align-items: center;
