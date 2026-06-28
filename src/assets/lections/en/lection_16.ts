@@ -194,5 +194,97 @@ export default [
 {
 	"id": 1520,
 	"title": "absolutely, definitely"
+},
+{
+  "id": 1502,
+  "title": "to fall"
+},
+{
+  "id": 1503,
+  "title": "to like, to please"
+},
+{
+  "id": 1504,
+  "title": "to flee, to escape"
+},
+{
+  "id": 1505,
+  "title": "to come to mind (idea)"
+},
+{
+  "id": 1506,
+  "title": "to wipe (wet)"
+},
+{
+  "id": 1507,
+  "title": "to collect, to gather"
+},
+{
+  "id": 1508,
+  "title": "to vacuum, to suck"
+},
+{
+  "id": 1509,
+  "title": "to bottle, to fill (into containers)"
+},
+{
+  "id": 1510,
+  "title": "to avoid"
+},
+{
+  "id": 1511,
+  "title": "to spend (time)"
+},
+{
+  "id": 1512,
+  "title": "to caress, to pet"
+},
+{
+  "id": 1513,
+  "title": "to argue, to quarrel"
+},
+{
+  "id": 1514,
+  "title": "to destroy"
+},
+{
+  "id": 1521,
+  "title": "to lift, to raise"
+},
+{
+  "id": 1522,
+  "title": "to fish, to angle"
+},
+{
+  "id": 1515,
+  "title": "usual, ordinary; usually"
+},
+{
+  "id": 1516,
+  "title": "foreign, strange, unfamiliar"
+},
+{
+  "id": 1517,
+  "title": "made up, invented"
+},
+{
+  "id": 1518,
+  "title": "frozen"
+},
+{
+  "id": 1519,
+  "title": "even"
+},
+{
+  "id": 1520,
+  "title": "absolutely, definitely"
+},
+{
+  "id": 1523,
+  "title": "original, originally"
+},
+{
+  "id": 1524,
+  "title": "vertical, perpendicular"
 }
 ]
